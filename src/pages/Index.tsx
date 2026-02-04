@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import Header from "@/components/Header";
 import HeroSection from "@/components/landing/HeroSection";
 import ProblemSection from "@/components/landing/ProblemSection";
 import SolutionSection from "@/components/landing/SolutionSection";
@@ -11,6 +13,10 @@ import CTASection from "@/components/landing/CTASection";
 import FloatingCTA from "@/components/landing/FloatingCTA";
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "Magang CEO - Program Magang Eksklusif";
+  }, []);
+
   return (
     <main className="min-h-screen">
       <HeroSection />
